@@ -1,1 +1,293 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vergil Sparda - Designer & Front-End Developer</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans:300">
+<link rel="stylesheet" href="resources/css/main.css">
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+<script type="text/javascript" src="resources/js/prefixfree.js"></script>
+</head>
+<body>
+<section class="sep loader">
+
+<div id="loader">
+  <div class="shadow"></div>
+  <div id="portalcube">
+    <div class="squares">
+      <div class="box"></div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="circle">
+      <div class="heart"></div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="sep home">
+	<div class="content">
+		<div class="top-right">
+			<div class="xcube" onclick="window.open('/html5canvas/')" >
+				<div class="xcircle xouter">
+				<div class="xline xv"></div>
+				<div class="xline xh"></div> 
+				<div class="xcircle xinner">
+				<div class="xheart"></div> 
+				</div></div>
+				<div class="xrectangle xv"></div>
+				<div class="xrectangle xh"></div>
+				<div class="xsquare xtl"></div>
+				<div class="xsquare xtr"></div>
+				<div class="xsquare xbl"></div>
+				<div class="xsquare xbr"></div>
+			</div>
+		</div>
+		<div class="on-middle-screen">
+			<div class="logo-spark"></div>
+			Hey, I'm <b>Vergil Sparda</b><br>
+			Welcome on MySpark!
+			<div class="main-description">How about a magic trick?</div>
+		</div>
+		
+		<div class="on-bottom-screen">
+			<div class="resume-button" onclick="showMainSite()">Let's go!</div>
+		</div>
+	</div>
+</section>
+
+
+<style>
+.column4{
+	width:25%;
+	display:inline-block;
+	margin-left: -2px;
+	margin-right: -2px;
+}
+.pic-block{
+	margin: 15px;
+	height: 300px;
+	background-color: #e4e4e4;
+}
+</style>
+
+
+<section class="sep s1">
+	<div class="content">
+		<div class="site-main">
+			<div class="top-message"></div>
+			<hr>
+			<div>[Розділ 1] [Розділ 2] [Розділ 3]</div>
+			<hr>
+			<div class="site-content">
+				<div class="column4">
+					<div class="pic-block"></div>
+				</div>
+				<div class="column4">
+					<div class="pic-block"></div>
+				</div>
+				<div class="column4">
+					<div class="pic-block"></div>
+				</div>
+				<div class="column4">
+					<div class="pic-block"></div>				
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="contact-me"></div>
+</section>
+
+
+
+
+
+
+
+<section class="sep info">
+	<div class="content">
+		<div class="on-middle-screen myself">
+			<div class="my-ava"></div>
+			<div class="info-title">A Little Bit About Myself</div>
+			<div class="info-description">
+				I am a 22 year old Designer & Front-End Developer based in Lviv.
+				I specialise in user interface design for web & mobile.
+				As I believe that details get lost on the way and I do most of my design work in the browser I am as passionate about front-end code as I am about design.
+				Feel free to write me if you have any questions or projects coming up.
+			</div>
+			<div class="soc-holder">
+				<div class="inlinear soc-button twitter-button">Twitter</div>
+				<div class="inlinear soc-button mail-button">Email</div>
+				<div class="inlinear soc-button fb-button">Facebook</div> 
+			</div>
+		</div>
+		<div class="on-bottom-screen">
+
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="resources/js/script.js"></script>
+<style>
+body, html {
+  background-color: #333333;
+  background: radial-gradient(ellipse at center, #333333 0%,#2e2e2e 100%);
+  width:100%;
+  height:100%;
+  margin: 0;
+}
+
+#portalcube {
+  animation-timing-function:cubic-bezier(0.5,1,0.75,0);
+  animation: bounce .7s infinite;
+  
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-35px;
+  
+}
+#portalcube .circle {
+  background-color: #cccccc;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333333;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -17px;
+  margin-left: -18px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 20px;
+  color: #333333;
+  animation-timing-function:cubic-bezier(0,.5,.7,1);
+  animation: circlebounce .7s infinite;
+}
+#portalcube .squares {
+  position:absolute;
+  left:50%;
+  top:50%;
+  animation-timing-function:cubic-bezier(1,1,1,1);
+  animation: rotates .7s infinite;
+  width:1px;
+  height:1px;
+  background-color: #000;
+}
+
+#portalcube .box {
+  background-color: #cccccc;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left:-28px;
+  margin-top:-28px;
+}
+#portalcube ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#portalcube ul li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 29px;
+  height: 29px;
+  background-color: #cccccc;
+  border-radius: 7px;
+  border: 2px solid #333333;
+}
+#portalcube ul li:nth-child(4n + 1) {
+  margin-top: -35px;
+  margin-left: -35px;
+}
+#portalcube ul li:nth-child(4n + 2) {
+  margin-top: -35px;
+  margin-left: 1px;
+}
+#portalcube ul li:nth-child(4n + 3) {
+  margin-top: 1px;
+  margin-left: 1px;
+}
+#portalcube ul li:nth-child(4n + 4) {
+  margin-top: 1px;
+  margin-left: -35px;
+}
+
+#loader {
+  position:absolute;
+  width:90px;
+  height:90px;
+  left:50%;
+  top:50%;x
+}
+
+.shadow {
+  width: 90px;
+  height: 1px;
+  background-color: rgba(0,0,0,.3);
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-77px;
+  margin-top:-10px;
+  box-shadow:0 0 5px rgba(0,0,0,1);
+  transform:scale(.7);
+  animation-timing-function:cubic-bezier(0,0,.1,1);
+  animation:shadowresize .7s infinite;
+}
+
+#heart {
+  position: relative;
+  width: 50px;
+  height: 45px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: 8px;
+  width: 9px;
+  height: 15px;
+  background: #cc0000;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 7px;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+@keyframes rotates {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(90deg);}
+}
+@keyframes bounce {
+  0% {margin-top:-45px;}
+  50% {margin-top:-55px;}
+  100% {margin-top:-45px;}
+}
+@keyframes circlebounce {
+  0% {margin-top:-17px;}
+  50% {margin-top:-23px;}
+  100% {margin-top:-17px;}
+}
+@keyframes shadowresize {
+  0% {transform:scale(.6);}
+  30% {transform:scale(.2);}
+  100% {transform:scale(.6);}
+}
+</style>
+</body>
+</html>
+
