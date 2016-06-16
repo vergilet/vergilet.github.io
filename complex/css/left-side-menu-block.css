@@ -13,9 +13,13 @@
 	vertical-align: middle;
 	color:white;
 	padding-left:0px;
+	opacity: 1;
 }
 .left-menu-item:active, .lm-item > div.active:active{
 	background-color:#428bca;
+}
+.left-menu-item:hover, .lm-item > div.active:hover{
+	opacity: .8;
 }
 .lm-item > div.active{
 	background-color:#a4cf65;
