@@ -95,8 +95,8 @@
 .chat-panel-plus{
 	color:#fff;
 	float:left;
-    display:inline-block;
-	height:50px;
+    	display:inline-block;
+	height:80px;
 	width:50px;
 	padding-top:10px;
 	padding-left:10px;
@@ -107,7 +107,7 @@
 	color:#fff;
 	float:right;
 	display:inline-block;
-	height:50px;
+	height:80px;
 	width:74px;	
 	padding-top: 10px;
 	padding-right: 10px;
@@ -115,15 +115,16 @@
 
 }
 .circle-green{
-	height:32px;
-	width:32px;
-	background:#a4cf65;
-	border-radius:25px;
-	font-weight: bold;
-	font-size: 23px;
-	line-height: 32px;
-	vertical-align: middle;
-	text-align: center;
+	height: 40px;
+        width: 40px;
+    	background: #a4cf65;
+    	border-radius: 25px;
+    	font-weight: bold;
+    	font-size: 23px;
+    	line-height: 40px;
+    	vertical-align: middle;
+    	text-align: center;
+    	margin-top: 10px;
 }
 .circle-green:hover,.button-green:hover{
 	background-color:#428bca;
