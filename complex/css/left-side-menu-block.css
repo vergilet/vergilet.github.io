@@ -14,7 +14,7 @@
 	color:white;
 	padding-left:0px;
 }
-.left-menu-item:hover, .lm-item > div.active:hover{
+.left-menu-item:active, .lm-item > div.active:active{
 	background-color:#428bca;
 }
 .lm-item > div.active{
