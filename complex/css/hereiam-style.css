@@ -381,8 +381,8 @@ a{
 
 /* override default behavior of the mm-menu */
 .mm-menu.mm-opened {
-	overflow: inherit;
-	overflow-y: inherit;
+	overflow: inherit!important;
+	overflow-y: inherit!important;
 }
 
 	
