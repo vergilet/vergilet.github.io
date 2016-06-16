@@ -379,6 +379,11 @@ a{
 	text-shadow:none!important;
 }
 
+/* override default behavior of the mm-menu */
+.mm-menu.mm-opened {
+	overflow: inherit;
+	overflow-y: inherit;
+}
 
 	
 @media (max-width: 767px) {
