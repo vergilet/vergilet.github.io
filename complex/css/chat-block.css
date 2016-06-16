@@ -50,8 +50,15 @@
 	border-bottom: 0px solid transparent;
 	border-top: 0px solid transparent;
 }
-.chat-left:hover, .chat-right:hover{
+.chat-left, .chat-right{
+	opacity: 1;
+	cursor:pointer;
+}
+.chat-left:active, .chat-right:active{
 	background: #428bca;
+}
+.chat-left:hover, .chat-right:hover{
+	opacity: .8;
 	cursor:pointer;
 }
 .chat-title{
@@ -126,8 +133,12 @@
     	vertical-align: middle;
     	text-align: center;
     	margin-top: 10px;
+    	opacity: 1;
 }
 .circle-green:hover,.button-green:hover{
+	opacity: .8;
+}
+.circle-green:active,.button-green:active{
 	background-color:#428bca;
 }
 
