@@ -79,16 +79,13 @@
     customer: 'cus_Bw5pTNh6Ua2ATt'
   });
 
-  document.addEventListener("DOMContentLoaded", function(event) { 
-	document.querySelector('#billing').addEventListener(
-      'click',
-      function(event) {
-        event.preventDefault();
-        handler.open();
-      },
-      false
-    );
-  });
+	  $(document).ready(function{
+			    $('#billing').on('click', function(){
+	  handler.open()
+	  })
+			    })
+  
+
 </script>
 </body>
 </html>
