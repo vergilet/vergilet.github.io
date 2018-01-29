@@ -53,8 +53,6 @@
  
 </div> -->
 
-
-
 <html>
 <head>
 
@@ -64,6 +62,9 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  
+ <script src="https://staging.accountdock.com/app.min.js"></script>
+
 </head>
 <body>
 
@@ -71,22 +72,17 @@
 <div>
 <button id="billing">View Billing</button>
 </div>
-  <script src="https://static.accountdock.com/app.min.js"></script>
-
-  <script type="text/javascript">
+<script type="text/javascript">
   var handler = AccountDock.configure({
-    key: 'ad_acco_kxibqza4h89urjwn',
-    customer: 'cus_Bw5pTNh6Ua2ATt'
+    key: 'ad_acco_ih0sqd84gfeur3c9',
+    customer: 'cus_Bmfy0syUi67kAW'
   });
-
-$(document).ready(function() {
-    $('#billing').on('click', function() {
-        handler.open()
-    })
-})
-  
-
+  document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('#billing').addEventListener('click', function(event) {
+      event.preventDefault();
+      handler.open();
+    }, false);
+  });
 </script>
 </body>
 </html>
-1
